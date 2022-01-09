@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{{ form|crispy }}
+{% block content %}
+
+
+    <h3>Register</h3>
+    {% include 'accounts/form.html' with form=form %}
+
+{% endblock %}
+
